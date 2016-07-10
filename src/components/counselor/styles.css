@@ -13,7 +13,7 @@
  */
 
 #counselor .image {
-  background: url('/img/counselor_bg.jpg') 50% 50% no-repeat;
+  background: url('img/counselor_bg.jpg') 50% 50% no-repeat;
   background-size: cover;
   margin-bottom: 72px;
   min-height: 80px;
