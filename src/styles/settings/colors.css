@@ -1,0 +1,14 @@
+/**
+ * Colors
+ */
+
+:root {
+  --black: #000;
+  --gray-dark: #555;
+  --gray: #888;
+  --gray-light: #ccc;
+  --gray-lighter: #f6f6f6;
+  --white: #fff;
+
+  --yellow: #db9d3e;
+}

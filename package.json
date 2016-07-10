@@ -1,0 +1,41 @@
+{
+  "name": "ichou-shinri.com",
+  "version": "0.0.1",
+  "private": true,
+  "config": {
+    "postcss_use": "-u postcss-import --postcss-import.glob true -u postcss-custom-media -u postcss-custom-properties -u postcss-calc -u autoprefixer"
+  },
+  "scripts": {
+    "build": "npm run build:html && npm run build:css && npm run build:js && npm run build:img",
+    "build:html": "pug -o public src/index.pug",
+    "build:css": "postcss $npm_package_config_postcss_use -u cssnano -o public/app.css src/index.css",
+    "build:js": "browserify src | uglifyjs -c warnings=false,drop_console=true > public/app.js",
+    "build:img": "cp -r src/img public",
+    "watch": "npm run build:img && npm run watch:html & npm run watch:css & npm run watch:js",
+    "watch:html": "pug -Pwo public src/index.pug",
+    "watch:css": "postcss $npm_package_config_postcss_use -wo public/app.css src/index.css",
+    "watch:js": "watchify src -dv -o public/app.js",
+    "clean": "rm -rf public/*",
+    "deploy": "npm run clean && npm run build && gh-pages -d public"
+  },
+  "dependencies": {
+    "gumshoe": "cferdinandi/gumshoe",
+    "smooth-scroll": "cferdinandi/smooth-scroll",
+    "suitcss-base": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browserify": "^13.0.1",
+    "cssnano": "^3.7.1",
+    "gh-pages": "^0.11.0",
+    "postcss-calc": "^5.2.1",
+    "postcss-cli": "^2.5.2",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^7.1.3",
+    "pug": "^2.0.0-beta3",
+    "pug-cli": "^1.0.0-alpha6",
+    "uglify-js": "^2.7.0",
+    "watchify": "^3.7.0"
+  }
+}

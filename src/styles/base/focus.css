@@ -1,0 +1,10 @@
+/**
+ * Focus
+ */
+
+a:focus,
+button:focus,
+input:focus,
+[tabindex]:focus {
+  outline: 1px dotted var(--gray-light);
+}

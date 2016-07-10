@@ -1,0 +1,33 @@
+/**
+ * Typography
+ */
+
+/* Font weight */
+
+.u-fwB {
+  font-weight: bold;
+}
+
+/* Text alignment */
+
+.u-taL {
+  text-align: left !important;
+}
+
+.u-taC {
+  text-align: center !important;
+}
+
+.u-taR {
+  text-align: right !important;
+}
+
+/* Text truncate */
+
+.u-tt {
+  display: block;
+  max-width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}

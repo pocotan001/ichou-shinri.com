@@ -1,0 +1,30 @@
+/**
+ * Root
+ */
+
+html {
+  background: var(--white);
+  color: var(--gray);
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100%;
+  line-height: 1.6;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+body {
+  height: 100%;
+  padding-top: var(--dimension-header-height);
+}
+
+/**
+ * Media queries
+ */
+
+@media (--break-sm) {
+  body {
+    padding-top: 0;
+  }
+}

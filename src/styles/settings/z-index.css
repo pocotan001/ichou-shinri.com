@@ -1,0 +1,7 @@
+/**
+ * Z-index master list
+ */
+
+:root {
+  --zindex-header: 100;
+}

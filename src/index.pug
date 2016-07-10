@@ -1,0 +1,19 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+    title いちょう心理オフィス
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='apple-mobile-web-app-title', content='いちょう心理オフィス')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    link(rel='stylesheet', href='/app.css')
+  body
+    include ./components/header/index
+    main
+      include ./components/about/index
+      include ./components/service/index
+      include ./components/counselor/index
+    include ./components/footer/index
+    script(src='/app.js')

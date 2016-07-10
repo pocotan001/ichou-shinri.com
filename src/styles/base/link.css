@@ -1,0 +1,15 @@
+/**
+ * Link
+ */
+
+a {
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover,
+a.-active {
+  color: var(--yellow);
+}

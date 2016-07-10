@@ -1,0 +1,45 @@
+/**
+ * Service
+ */
+
+#service {
+  background: var(--gray-lighter);
+  overflow: hidden;
+  padding: 28px;
+  text-align: center;
+}
+
+#service .icon {
+  background: var(--white);
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+}
+
+/**
+ * Price table
+ */
+
+#service .price {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#service .price th,
+#service .price td {
+  border-bottom: 1px solid var(--gray-light);
+  padding: 8px 0;
+}
+
+#service .price th {
+  font-weight: 500;
+  text-align: left;
+}
+
+#service .price td {
+  text-align: right;
+}

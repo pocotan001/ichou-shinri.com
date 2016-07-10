@@ -1,0 +1,54 @@
+/**
+ * Header
+ */
+
+#header {
+  background: var(--white);
+  left: 0;
+  padding: 0 28px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: var(--zindex-header);
+}
+
+#header > .grid {
+  height: var(--dimension-header-height);
+}
+
+/**
+ * Logo
+ */
+
+#header .logo {
+  height: 40px;
+}
+
+#header .logo img {
+  display: block;
+}
+
+/**
+ * Global nav
+ */
+
+#header nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/**
+ * Media queries
+ */
+
+@media (--break-sm) {
+  #header {
+    padding: 12px;
+    position: static;
+    text-align: center;
+  }
+
+  #header > .grid {
+    height: auto;
+  }
+}

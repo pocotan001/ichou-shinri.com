@@ -1,0 +1,64 @@
+/**
+ * About
+ */
+
+#about {
+  background: var(--white);
+  overflow: hidden;
+  text-align: center;
+}
+
+/**
+ * Content
+ */
+
+#about .content {
+  margin: 0 -28px 0 28px;
+  position: relative;
+  z-index: 1;
+}
+
+/**
+ * Image
+ */
+
+#about .image {
+  overflow: hidden;
+  position: relative;
+}
+
+#about .image::after {
+  background: var(--white);
+  border-radius: 50%;
+  content: '';
+  height: 900px;
+  margin: -450px -80px 0 0;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  width: 900px;
+}
+
+/**
+ * Media queries
+ */
+
+@media (--break-sm) {
+  #about .grid__cell {
+    flex: none;
+  }
+
+  #about .content {
+    margin: -28px 28px 28px;
+  }
+
+  #about .image img {
+    width: 100%;
+  }
+
+  #about .image::after {
+    margin: -20% -450px 0 0;
+    right: 50%;
+    top: 100%;
+  }
+}

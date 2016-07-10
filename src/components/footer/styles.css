@@ -1,0 +1,24 @@
+/**
+ * Footer
+ */
+
+#footer {
+  background: var(--gray-lighter);
+  overflow: hidden;
+  padding: 28px;
+  text-align: center;
+}
+
+/**
+ * Contact link
+ */
+
+#footer .contact {
+  border: 1px solid var(--gray-light);
+  border-radius: 4px;
+  padding: 0.6em 1.4em;
+}
+
+#footer .contact:hover {
+  border-color: var(--yellow);
+}

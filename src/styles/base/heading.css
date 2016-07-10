@@ -1,0 +1,16 @@
+/**
+ * Heading
+ */
+
+h1 {
+  color: var(--gray-dark);
+  font-weight: 500;
+}
+
+/**
+ * Lebel 2
+ */
+
+section section h1 {
+  font-size: 18px;
+}
