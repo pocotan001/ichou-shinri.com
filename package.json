@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "config": {
+    "domain": "ichou-shinri.com",
     "postcss_use": "-u postcss-import --postcss-import.glob true -u postcss-custom-media -u postcss-custom-properties -u postcss-calc -u autoprefixer"
   },
   "scripts": {
@@ -16,7 +17,8 @@
     "watch:css": "postcss $npm_package_config_postcss_use -wo public/app.css src/index.css",
     "watch:js": "watchify src -dv -o public/app.js",
     "clean": "rm -rf public/*",
-    "deploy": "npm run clean && npm run build && gh-pages -d public"
+    "cname": "echo $npm_package_config_domain > public/CNAME",
+    "deploy": "npm run clean && npm run build && npm run cname && gh-pages -d public"
   },
   "dependencies": {
     "gumshoe": "cferdinandi/gumshoe",
