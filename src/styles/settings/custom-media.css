@@ -2,4 +2,4 @@
  * Media queries breakpoints
  */
 
-@custom-media --break-sm (max-width: 40rem);
+@custom-media --break-sm (max-width: 46em);
