@@ -10,7 +10,7 @@
     "build": "npm run build:html && npm run build:css && npm run build:js && npm run build:img",
     "build:html": "pug -o public src/index.pug",
     "build:css": "postcss $npm_package_config_postcss_use -u cssnano -o public/app.css src/index.css",
-    "build:js": "browserify src | uglifyjs -c warnings=false,drop_console=true > public/app.js",
+    "build:js": "browserify src | uglifyjs -cm warnings=false,drop_console=true > public/app.js",
     "build:img": "cp -r src/img public",
     "watch": "npm run build:img && npm run watch:html & npm run watch:css & npm run watch:js",
     "watch:html": "pug -Pwo public src/index.pug",
